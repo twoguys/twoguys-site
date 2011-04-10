@@ -33,11 +33,12 @@
           %a{:href => "/design"} WE DESIGN
         %li{:class => @build ? "active" : ""}
           %a{:href => "/build"} WE BUILD
-        %li{:class => @deply ? "active" : ""}
+        %li{:class => @deploy ? "active" : ""}
           %a{:href => "/deploy"} WE DEPLOY
     
     %section.content
-      = yield
+      .inner
+        = yield
             
     :javascript
       var _gaq = _gaq || [];

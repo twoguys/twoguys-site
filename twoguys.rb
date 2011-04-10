@@ -13,13 +13,13 @@ get '/design' do
 end
 
 get '/build' do
-  @development = true
-  haml :development
+  @build = true
+  haml :build
 end
 
 get '/deploy' do
-  @posters = true
-  haml :posters
+  @deploy = true
+  haml :deploy
 end
 
 get '/stylesheets/reset.css' do

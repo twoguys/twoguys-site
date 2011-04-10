@@ -34,6 +34,7 @@ nav
 	height: 100%
 	ul
 		height: 100%
+		position: relative
 		li
 			width: 100%
 			text-align: right
@@ -67,16 +68,25 @@ nav
 			a
 				color: #ddd
 				text-shadow: none
+				width: 100%
 				span.text
 					color: #ddd
+		li.active:after
+			background: transparent url(../images/arrow.png) no-repeat 100% 50%
+			position: absolute
+			right: -80px
+			height: 120px
+			width: 80px
+			content: " "
 		
 nav li, nav li a, .content .quote
 	height: 120px
 	
 .content
-	width: 74%
-	padding: 0 0 0 6%
+	width: 80%
 	float: right
+	.inner
+		padding-left: 80px
 	section
 		padding: 20px
 
@@ -124,6 +134,8 @@ nav li, nav li a, .content .quote
 			margin-right: -1px
 			a
 				height: 60px
+		ul li.active:after
+			display: none
 	.content
 		float: none
 		width: 94%
