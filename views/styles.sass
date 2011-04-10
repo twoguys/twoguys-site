@@ -1,0 +1,133 @@
+$background_color: #ebe9e7
+$text_color: #413e3c
+$link_color: #b50000
+
+html, body
+	font-family: "chaparral-pro-1", "chaparral-pro-2", Georgia, serif
+	font-size: 14px
+	font-weight: 100
+	color: $text_color
+	background: $background_color url(../images/texture.jpg) repeat
+	text-shadow: 1px 1px 1px #fff
+	height: 100%
+
+h1, h2, h3
+	font-weight: 100
+h1
+	font-size: 22px
+h3
+	font-size: 16px
+	font-style: italic
+
+a, a:visited
+	color: $link_color
+	text-decoration: underline
+	text-shadow: none
+
+nav
+	width: 20%
+	float: left
+	position: fixed
+	top: 0
+	left: 0
+	background: #fff url(../images/texture-white.jpg) repeat
+	height: 100%
+	ul
+		height: 100%
+		li
+			width: 100%
+			text-align: right
+			display: table
+			border-bottom: 1px solid #e6e6e6
+			a, a:visited
+				text-decoration: none
+				display: table-cell
+				width: 84%
+				padding: 0 8%
+				font-size: 17px
+				text-transform: uppercase
+				vertical-align: middle
+				color: $text_color
+				span.logo
+					display: inline-block
+					position: relative
+					top: -2px
+					padding: 3px 0 0 3px
+					text-align: center
+					width: 23px
+					height: 23px
+					background: transparent url(../images/symbol.png) no-repeat 0 0
+					color: $text_color
+				span.text
+					position: relative
+					top: -1px
+					color: $text_color
+		li.active
+			background: #343230 url(../images/texture-dark.jpg) repeat
+			a
+				color: #ddd
+				text-shadow: none
+				span.text
+					color: #ddd
+		
+nav li, nav li a, .content .quote
+	height: 120px
+	
+.content
+	width: 74%
+	padding: 0 0 0 6%
+	float: right
+	section
+		padding: 20px
+
+.quote
+	display: table
+	padding-left: 20px
+	h1
+		display: table-cell
+		vertical-align: middle
+	
+.us
+	background: #dcd8d6
+	background: rgba(0,0,0,0.02)
+	ul
+		li
+			width: 30%
+			min-width: 200px
+			float: left
+			margin-right: 5%
+			h1
+				margin-bottom: 3px
+
+.work
+	margin-top: 40px
+	background: #ebe7e5
+	background: rgba(255,255,255,0.2)
+
+.highlighted
+	color: $link_color
+	font-style: italic
+
+
+@media (min-device-width:1024px) and (max-width:800px), screen and (max-device-width:480px), (max-device-width:480px) and (orientation:landscape), (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait)
+	nav
+		width: 100%
+		float: none
+		height: 60px
+		ul li
+			float: left
+			border-bottom: none
+			border-right: 1px solid #e6e6e6
+			width: 25%
+			height: 60px
+			text-align: center
+			margin-right: -1px
+			a
+				height: 60px
+	.content
+		float: none
+		width: 94%
+		position: relative
+		top: 51px
+		.us ul li
+			width: 45%

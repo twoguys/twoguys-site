@@ -1,0 +1,51 @@
+!!!
+%html{html_attrs('en')}
+  / Designed and built by David Browning of Two Guys, LLC
+  / All content & design copyright 2011 Two Guys, LLC
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %meta{ :name => "Description", "http-equiv" => "Description", :content => "We design and build things you’re proud to show off." }
+    %meta{ :name => "Keywords", "http-equiv" => "Keywords", :content => "twoguys, two guys, two, guys, design, development, studio, web, ruby, rails, ruby on rails, iphone" }
+    %title Two Guys
+    
+    %link{ :id => 'favicon', :href => '/images/favicon.png', :rel => 'icon', :type => 'image/x-icon' }
+    %link{ :href => '/stylesheets/reset.css', :rel => 'stylesheet', :media => 'screen, projection', :type => "text/css" }
+    %link{ :href => '/stylesheets/styles.css', :rel => 'stylesheet', :media => 'screen, projection', :type => "text/css" }
+    
+    / [if lt IE 9]
+      %script{ :src => "http://html5shiv.googlecode.com/svn/trunk/html5.js", :type => "text/javascript" }
+    / [if lt IE 8]
+      %link{ :href => '/stylesheets/ie.css', :rel => 'stylesheet', :media => 'screen, projection', :type => "text/css" }
+    
+    %script{ :src => "http://use.typekit.com/omc7jkx.js", :type => "text/javascript" }
+    :javascript
+      try{Typekit.load();}catch(e){}
+    
+  %body
+    
+    %nav
+      %ul#menu
+        %li{:class => @home ? "active" : ""}
+          %a{:href => "/"}
+            %span.logo 2
+            %span.text GUYS
+        %li{:class => @design ? "active" : ""}
+          %a{:href => "/design"} WE DESIGN
+        %li{:class => @build ? "active" : ""}
+          %a{:href => "/build"} WE BUILD
+        %li{:class => @deply ? "active" : ""}
+          %a{:href => "/deploy"} WE DEPLOY
+    
+    %section.content
+      = yield
+            
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-19489483-1']);
+      _gaq.push(['_trackPageview']);
+  
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
