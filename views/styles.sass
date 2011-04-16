@@ -39,11 +39,10 @@ nav
 		li
 			width: 100%
 			text-align: right
-			display: table
 			border-bottom: 1px solid #e6e6e6
 			a, a:visited
 				text-decoration: none
-				display: table-cell
+				line-height: 120px
 				width: 84%
 				padding: 0 8%
 				font-size: 17px
@@ -53,17 +52,14 @@ nav
 				font-style: normal
 				span.logo
 					display: inline-block
-					position: relative
-					top: -2px
 					padding: 3px 0 0 3px
 					text-align: center
 					width: 23px
 					height: 23px
+					line-height: 23px
 					background: transparent url(../images/symbol.png) no-repeat 0 0
 					color: $text_color
 				span.text
-					position: relative
-					top: -1px
 					color: $text_color
 		li.active
 			background: #343230 url(../images/texture-dark.jpg) repeat
@@ -252,6 +248,7 @@ a.arrowed-back
 			margin-right: -1px
 			a
 				height: 90px
+				line-height: 90px
 		ul li.active:after
 			display: none
 		ul li.details
