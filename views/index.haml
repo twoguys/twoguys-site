@@ -1,7 +1,7 @@
-.quote
+%header.quote
   %h1
     %span We design and build things
-    %span.highlighted you’re proud to show off.
+    %span.highlighted.tooltipped{:title => "v. to gladly shove in another's face"} you’re proud to show off.
 
 %section.us.clearfix
   %ul
@@ -27,5 +27,28 @@
         to pair with solid web apps.
 
 %section.work
-  %h1 A preview of our work
-  
+  %h1
+    A preview of our portfolio
+    %a.arrowed{:href => "/portfolio"} view all
+  %ul.clearfix
+    %li.remotejobs
+      %h3
+        Remote Jobs &#149
+        %a{:href => "/portfolio/remotejobs"} read more
+        %a{:href => "/portfolio/remotejobs"}
+          %img.color
+          %img.bw
+    %li.maxrvu
+      %h3
+        MaxRVU &#149
+        %a{:href => "/portfolio/maxrvu"} read more
+        %a{:href => "/portfolio/maxrvu"}
+          %img.color
+          %img.bw
+    %li.crashbucket
+      %h3
+        Crashbucket &#149
+        %a{:href => "/portfolio/crashbucket"} read more
+        %a{:href => "/portfolio/crashbucket"}
+          %img.color
+          %img.bw

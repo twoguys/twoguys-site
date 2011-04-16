@@ -6,10 +6,12 @@
     %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
     %meta{ :name => "Description", "http-equiv" => "Description", :content => "We design and build things you’re proud to show off." }
     %meta{ :name => "Keywords", "http-equiv" => "Keywords", :content => "twoguys, two guys, two, guys, design, development, studio, web, ruby, rails, ruby on rails, iphone" }
+    %meta{ :name => "apple-mobile-web-app-capable", :content => "yes" }
     %title Two Guys
     
     %link{ :id => 'favicon', :href => '/images/favicon.png', :rel => 'icon', :type => 'image/x-icon' }
     %link{ :href => '/stylesheets/reset.css', :rel => 'stylesheet', :media => 'screen, projection', :type => "text/css" }
+    %link{ :href => '/stylesheets/tipsy.css', :rel => 'stylesheet', :media => 'screen, projection', :type => "text/css" }
     %link{ :href => '/stylesheets/styles.css', :rel => 'stylesheet', :media => 'screen, projection', :type => "text/css" }
     
     / [if lt IE 9]
@@ -17,6 +19,9 @@
     / [if lt IE 8]
       %link{ :href => '/stylesheets/ie.css', :rel => 'stylesheet', :media => 'screen, projection', :type => "text/css" }
     
+    %script{ :src => "/javascripts/jquery-1.4.3.min.js", :type => "text/javascript"}
+    %script{ :src => "/javascripts/jquery.tipsy.js", :type => "text/javascript"}
+    %script{ :src => "/javascripts/application.js", :type => "text/javascript"}
     %script{ :src => "http://use.typekit.com/omc7jkx.js", :type => "text/javascript" }
     :javascript
       try{Typekit.load();}catch(e){}
@@ -29,15 +34,15 @@
           %a{:href => "/"}
             %span.logo 2
             %span.text GUYS
-        %li{:class => @design ? "active" : ""}
-          %a{:href => "/design"} WE DESIGN
-        %li{:class => @build ? "active" : ""}
-          %a{:href => "/build"} WE BUILD
-        %li{:class => @deploy ? "active" : ""}
-          %a{:href => "/deploy"} WE DEPLOY
+        %li{:class => @portfolio ? "active" : ""}
+          %a{:href => "/portfolio"} PORTFOLIO
+        %li{:class => @contact ? "active" : ""}
+          %a{:href => "/contact"} CONTACT
+        %li.details
+          This site was built to respond to your screen size and without a single &lt;div&gt;.
     
     %section.content
-      .inner
+      %section.inner
         = yield
             
     :javascript

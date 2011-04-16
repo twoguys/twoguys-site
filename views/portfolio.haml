@@ -1,0 +1,17 @@
+%header.quote
+  %h1
+    %span We design
+    %span.highlighted.tooltipped{:title => "adj. intuitive and sexy as hell"} usable interfaces
+    and build them into
+    %span.highlighted.tooltipped{:title => "adj. withstanding a King Kong punch"} stable applications.
+
+%section.work.portfolio
+  %ul.clearfix
+    - ['Remote Jobs','MaxRVU','Fast Customer','Crashbucket','Appmarkit','Nezumi','Publishur','We Create Ideas','Schoolyard Stewards','Open Brews','Fight Klub'].each do |project|
+      %li{:class => project.downcase.gsub(' ','')}
+        %h3
+          #{project} &#149
+          %a{:href => "/portfolio/#{project.downcase.gsub(' ','')}"} read more
+          %a{:href => "/portfolio/#{project.downcase.gsub(' ','')}"}
+            %img.color
+            %img.bw
