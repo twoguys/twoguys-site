@@ -5,3 +5,5 @@
 .tipsy-south { background-position: bottom center; }
 .tipsy-east { background-position: right center; }
 .tipsy-west { background-position: left center; }
+::-moz-selection{ background: #e48989; color:#fff; text-shadow: none; }
+::selection { background: #e48989; color:#fff; text-shadow: none; }
