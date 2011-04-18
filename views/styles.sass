@@ -63,6 +63,7 @@ nav
 				span.text
 					color: $text_color
 		li.active
+			position: relative
 			background: #343230 url(../images/texture-dark.jpg) repeat
 			a
 				color: #ddd
@@ -73,6 +74,7 @@ nav
 			background: transparent url(../images/arrow.png) no-repeat 100% 50%
 			position: absolute
 			right: -80px
+			top: 0
 			height: 120px
 			width: 80px
 			content: " "
@@ -140,13 +142,14 @@ nav li, nav li a, .content .quote
 			font-size: 15px
 			margin-left: 10px
 	ul
+		width: 100%
 		li
 			float: left
 			width: 230px
 			height: 200px
 			position: relative
 			margin: 0 30px 20px 0
-			img
+			span
 				display: block
 				width: 230px
 				height: 164px
@@ -157,38 +160,39 @@ nav li, nav li a, .content .quote
 				background-color: transparent
 				background-repeat: no-repeat
 				background-position: 0 0
-			img.bw
+			span.bw
 				-webkit-transition: opacity .4s linear
 				-moz-transition: opacity .4s linear
 				transition: opacity .4s linear
-			img.bw:hover
+			span.bw:hover
 				opacity: 0
-			img.color
+				filter: alpha(opacity=0)
+			span.color
 				background-position: 0 -167px
-		li.remotejobs img
+		li.remotejobs span
 			background-image: url(../projects/remotejobs/list.jpg)
-		li.maxrvu img
+		li.maxrvu span
 			background-image: url(../projects/maxrvu/teaser.jpg)
 		li.crashbucket
-			img
+			span
 				background-image: url(../projects/crashbucket/logo.jpg)
-			img.color
+			span.color
 				background-position: 0 -165px
-		li.appmarkit img
+		li.appmarkit span
 			background-image: url(../projects/appmarkit/homepage.jpg)
-		li.nezumi img
+		li.nezumi span
 			background-image: url(../projects/nezumi/site.jpg)
-		li.fastcustomer img
+		li.fastcustomer span
 			background-image: url(../projects/fastcustomer/icon.jpg)
-		li.publishur img
+		li.publishur span
 			background-image: url(../projects/publishur/site.jpg)
-		li.wecreateideas img
+		li.wecreateideas span
 			background-image: url(../projects/wecreateideas/homepage.jpg)
-		li.schoolyardstewards img
+		li.schoolyardstewards span
 			background-image: url(../projects/schoolyard/homepage.jpg)
-		li.openbrews img
+		li.openbrews span
 			background-image: url(../projects/openbrews/homepage.jpg)
-		li.fightklub img
+		li.fightklub span
 			background-image: url(../projects/fightklub/homepage.jpg)
 
 .work.portfolio
