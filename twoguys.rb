@@ -2,6 +2,8 @@ require 'rubygems'
 require 'sinatra'
 require 'sass'
 
+PROJECTS = %w{fastcustomer remotejobs maxrvu appmarkit crashbucket nezumi publishur wecreateideas schoolyardstewards fightklub openbrews}
+
 get '/' do
   @home = true
   haml :index
@@ -19,49 +21,10 @@ end
 
 # PROJECTS
 
-get '/portfolio/fastcustomer' do
+get '/portfolio/:project' do
+  pass unless PROJECTS.include?(params[:project])
   @portfolio = true
-  haml :fastcustomer
-end
-get '/portfolio/remotejobs' do
-  @portfolio = true
-  haml :remotejobs
-end
-get '/portfolio/maxrvu' do
-  @portfolio = true
-  haml :maxrvu
-end
-get '/portfolio/crashbucket' do
-  @portfolio = true
-  haml :crashbucket
-end
-get '/portfolio/appmarkit' do
-  @portfolio = true
-  haml :appmarkit
-end
-get '/portfolio/nezumi' do
-  @portfolio = true
-  haml :nezumi
-end
-get '/portfolio/publishur' do
-  @portfolio = true
-  haml :publishur
-end
-get '/portfolio/wecreateideas' do
-  @portfolio = true
-  haml :wecreateideas
-end
-get '/portfolio/schoolyardstewards' do
-  @portfolio = true
-  haml :schoolyardstewards
-end
-get '/portfolio/openbrews' do
-  @portfolio = true
-  haml :openbrews
-end
-get '/portfolio/fightklub' do
-  @portfolio = true
-  haml :fightklub
+  haml params[:project].to_sym
 end
 
 # STYLESHEETS
