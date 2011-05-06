@@ -2,6 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'sass'
 
+set :haml, :format => :html5
 PROJECTS = %w{fastcustomer remotejobs maxrvu appmarkit crashbucket nezumi publishur wecreateideas schoolyardstewards fightklub openbrews}
 
 get '/' do
