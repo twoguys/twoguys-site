@@ -52,6 +52,8 @@ nav
 				vertical-align: middle
 				color: $text_color
 				font-style: normal
+				-webkit-transition: all .2s linear
+				-moz-transition: all .2s linear
 				span.logo
 					display: inline-block
 					padding: 3px 0 0 3px
@@ -90,6 +92,12 @@ nav
 			text-align: center
 			width: 90%
 			padding: 0 5%
+		li:hover a
+			background: #fff
+			color: #000
+		li.active:hover a
+			background: none
+			color: #ddd
 		
 nav li, nav li a, .content .quote
 	height: 120px
