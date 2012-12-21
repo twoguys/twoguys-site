@@ -1,26 +1,32 @@
-%header.quote
-  %h1
-    Nezumi
-  %span.subtitle
-    An iPhone app to manage your Heroku apps.
-    %a.arrowed.link-out{:href => "http://nezumiapp.com"} visit site
+%nav
+  %a.prev{href: "/portfolio/appmarkit"} &larr;
+  %a.home{href: "/"} home
+  %a.next{href: "/portfolio/publishur"} &rarr;
 
-%section.project-description
-  %p
-    We love using
-    %a{:href => "http://heroku.com"} Heroku
-    to host all of our Ruby web apps. After a while we started wishing we could check on
-    and manage our apps while on the go, so we built the Nezumi iPhone app to do just that.
-  %p
-    You can do things like add collaborators, turn dynos &amp; workers up and down, execute
-    rake &amp; console tasks, restart your apps and more!
-  %p
-    We designed and built the iPhone app and the web splash screen.
+.container
   
-  %ul.screenshots
-    %li
-      %img{:src => "/projects/nezumi/large.jpg"}
-    %li
-      %img{:src => "/projects/nezumi/large2.jpg"}
+  %header
+    %h1 Nezumi
+    %span An iPhone app to manage your Heroku apps.
+
+  %section
+    %p
+      We love using
+      %a{:href => "http://heroku.com"} Heroku
+      to host all of our Ruby web apps. After a while we started wishing we could check on
+      and manage our apps while on the go, so we built the Nezumi iPhone app to do just that.
+    %p
+      You can do things like add collaborators, turn dynos &amp; workers up and down, execute
+      rake &amp; console tasks, restart your apps and more!
+    %p
+      Marshall designed and built the iPhone app, available in the
+      %a{href: "http://nezumiapp.com/appstore"} App Store.
+      David did the branding and designed the
+      %a{href: "http://nezumiapp.com"} web app.
   
-%a.arrowed-back.align.space-that-thing{:href => "/portfolio"} back to portfolio
+  %section
+    %ul
+      %li
+        %img{:src => "/projects/nezumi/web.jpg"}
+      %li
+        %img{:src => "/projects/nezumi/large.jpg"}

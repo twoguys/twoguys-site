@@ -6,7 +6,9 @@
     %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
     %meta{ :name => "Description", "http-equiv" => "Description", :content => "We design and build things you’re proud to show off." }
     %meta{ :name => "Keywords", "http-equiv" => "Keywords", :content => "twoguys, two guys, two, guys, design, development, studio, web, ruby, rails, ruby on rails, iphone" }
-    %title Two Guys
+    %title Two Guys | #{@title || "Web & Mobile"}
+    
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0, maximum-scale=1" }
     
     %link{ :id => 'favicon', :href => '/images/favicon.png', :rel => 'icon', :type => 'image/x-icon' }
     %link{ :href => '/stylesheets/reset.css', :rel => 'stylesheet', :media => 'screen, projection', :type => "text/css" }
@@ -23,24 +25,9 @@
     :javascript
       try{Typekit.load();}catch(e){}
     
-  %body
+  %body{id: @page}
     
-    %nav
-      %ul#menu
-        %li{:class => @home ? "active" : ""}
-          %a{:href => "/"}
-            %span.logo 2
-            %span.text GUYS
-        %li{:class => @portfolio ? "active" : ""}
-          %a{:href => "/portfolio"} PORTFOLIO
-        %li{:class => @contact ? "active" : ""}
-          %a{:href => "/contact"} CONTACT
-        %li.details
-          Responding lovingly to your screen size.
-    
-    %section.content
-      .inner
-        = yield
+    = yield
             
     :javascript
       var _gaq = _gaq || [];

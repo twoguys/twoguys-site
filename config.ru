@@ -1,2 +1,2 @@
-require 'twoguys'
+require './twoguys'
 run Sinatra::Application

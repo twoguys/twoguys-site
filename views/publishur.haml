@@ -1,20 +1,23 @@
-%header.quote
-  %h1
-    Publishur
-  %span.subtitle
-    Send group messages, but let each person decide how they want to receive them
-    %a.arrowed.link-out{:href => "http://publishur.com"} visit site
+%nav
+  %a.prev{href: "/portfolio/nezumi"} &larr;
+  %a.home{href: "/"} home
+  %a.next{href: "/portfolio/wecreateideas"} &rarr;
 
-%section.project-description
-  %p
-    Publishur allows you to send messages within private groups of friends, family, coworkers, etc. and
-    allows you to choose how you receive those messages. You can choose between email, chat, Twitter, and
-    more.
-  %p
-    We designed and built the Ruby on Rails web app.
+.container
   
-  %ul.screenshots
-    %li
-      %img{:src => "/projects/publishur/large.jpg"}
+  %header
+    %h1 Publishur
+    %span Send group messages, letting each person decide how they want to receive them.
+
+  %section
+    %p
+      Publishur allows you to send messages within private groups of friends, family, coworkers, etc. and
+      allows you to choose how you receive those messages. You can choose between email, chat, Twitter, and
+      more.
+    %p
+      David did the design and both David and Marshall built the Ruby on Rails web app.
   
-%a.arrowed-back.align.space-that-thing{:href => "/portfolio"} back to portfolio
+  %section
+    %ul
+      %li
+        %img{:src => "/projects/publishur/large.jpg"}

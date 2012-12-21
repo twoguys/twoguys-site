@@ -1,25 +1,31 @@
-%header.quote
-  %h1
-    Crashbucket
-  %span.subtitle
-    Providing iPhone developers with instant crash reports from their apps
+%nav
+  %a.prev{href: "/portfolio/maxrvu"} &larr;
+  %a.home{href: "/"} home
+  %a.next{href: "/portfolio/appmarkit"} &rarr;
 
-%section.project-description
-  %p
-    After building a number of iPhone apps we realized we had no way of knowing if users were seeing
-    crashes of any sort. There were numerous services available at the time for Ruby on Rails apps,
-    but none for iOS, so we decided to build one.
-  %p
-    Not long after Crashbucket was launched,
-    %a{:href => "http://thoughtbot.com"} Thoughtbot
-    contacted us about a possible collaboration. Since we love Thoughtbot and their products we
-    were happy to partner with them and integrate Crashbucket into their
-    %a{:href => "http://hoptoadapp.com/pages/ios-notifier"} Hoptoad iOS Notifier.
+.container
   
-  %ul.screenshots
-    %li
-      %img{:src => "/projects/crashbucket/large.jpg"}
-    %li
-      %img{:src => "/projects/crashbucket/large2.jpg"}
+  %header
+    %h1 Crash Bucket
+    %span Providing iPhone developers with crash reports from their apps.
+
+  %section
+    %p
+      After building a number of iPhone apps we realized we had no way of knowing if users were seeing
+      crashes of any sort. There were numerous services available at the time for Ruby on Rails apps,
+      but none for iOS, so we decided to build one.
+    %p 
+      Not long after Crashbucket was launched,
+      %a{:href => "http://thoughtbot.com"} Thoughtbot
+      contacted us about a possible collaboration. Since we love Thoughtbot and their products we
+      were happy to partner with them and integrate Crashbucket into their
+      %a{:href => "http://hoptoadapp.com/pages/ios-notifier"} Hoptoad iOS Notifier.
+    %p
+      David did the design and web development. Marshall helped build the iOS notifier library with Caleb Davenport.
   
-%a.arrowed-back.align.space-that-thing{:href => "/portfolio"} back to portfolio
+  %section
+    %ul
+      %li
+        %img{:src => "/projects/crashbucket/large.jpg"}
+      %li
+        %img{:src => "/projects/crashbucket/large2.jpg"}

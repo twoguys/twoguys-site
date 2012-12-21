@@ -1,25 +1,28 @@
-%header.quote
-  %h1
-    Appmark.it
-  %span.subtitle
-    You develop the apps, we help market and track them.
-    %a.arrowed.link-out{:href => "http://appmark.it"} visit site
+%nav
+  %a.prev{href: "/portfolio/crashbucket"} &larr;
+  %a.home{href: "/"} home
+  %a.next{href: "/portfolio/nezumi"} &rarr;
 
-%section.project-description
-  %p
-    There are many iOS developers who aren't web developers, but wish they could create a
-    web presence to market their app. Appmark.it provides a free service to solve this problem.
-  %p
-    Create a site for your app in just seconds using the description and screenshots on the
-    iTunes store. Choose a sexy theme to display your content within, track analytics on who's
-    downloading your app, and use your own custom domain.
-  %p
-    We designed and built the Ruby on Rails app.
+.container
   
-  %ul.screenshots
-    %li
-      %img{:src => "/projects/appmarkit/large.jpg"}
-    %li
-      %img{:src => "/projects/appmarkit/large2.jpg"}
+  %header
+    %h1 Appmark.it
+    %span You develop the apps, Appmark.it helps market and track them.
+
+  %section
+    %p
+      There are many iOS developers who aren't web developers, but wish they could create a
+      web presence to market their app. Appmark.it provides a free service to solve this problem.
+    %p
+      Create a site for your app in just seconds using the description and screenshots on the
+      iTunes store. Choose a sexy theme to display your content within, track analytics on who's
+      downloading your app, and use your own custom domain.
+    %p
+      David did the design and front-end development. David and Marshall both built the back-end Ruby on Rails app.
   
-%a.arrowed-back.align.space-that-thing{:href => "/portfolio"} back to portfolio
+  %section
+    %ul
+      %li
+        %img{:src => "/projects/appmarkit/large.jpg"}
+      %li
+        %img{:src => "/projects/appmarkit/large2.jpg"}

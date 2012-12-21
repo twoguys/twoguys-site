@@ -1,23 +1,25 @@
-%header.quote
-  %h1
-    Fast Customer
-  %span.subtitle
-    Don't wait on hold, let Fast Customer do it for you.
-    %a.arrowed.link-out{:href => "http://fastcustomer.com"} visit site
+%nav
+  %a.prev{href: "/portfolio/giftcardzen"} &larr;
+  %a.home{href: "/"} home
+  %a.next{href: "/portfolio/remotejobs"} &rarr;
 
-%section.project-description
-  %p
-    %a{:href => "http://fastcustomer.com"} Fastcustomer
-    is a wonderful app that waits on hold for you. You choose a company from the list and the operator calls you.
-  %p
-    David led the design and developed the front-end as well as part of the back-end systems. Marshall handled all of the iOS development.
+.container
   
-  %ul.screenshots
-    %li
-      %img{:src => "/projects/fastcustomer/web.jpg"}
-    %li
-      %img{:src => "/projects/fastcustomer/web2.jpg"}
-    %li
-      %img{:src => "/projects/fastcustomer/iphone.jpg"}
+  %header
+    %h1 Fast Customer
+    %span Don't wait on hold, let Fast Customer do it for you.
+
+  %section
+    %p
+      %a{:href => "http://fastcustomer.com"} Fastcustomer
+      %span is a wonderful app that waits on hold for you. You choose a company from the list and the operator calls you.
+    %p David led the design and developed the front-end as well as part of the back-end systems. Marshall handled all of the iOS development.
   
-%a.arrowed-back.align.space-that-thing{:href => "/portfolio"} back to portfolio
+  %section
+    %ul
+      %li
+        %img{:src => "/projects/fastcustomer/web.jpg"}
+      %li
+        %img{:src => "/projects/fastcustomer/web2.jpg"}
+      %li
+        %img{:src => "/projects/fastcustomer/iphone.jpg"}

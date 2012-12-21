@@ -1,30 +1,35 @@
 require 'rubygems'
 require 'sinatra'
+require 'haml'
 require 'sass'
+require 'compass'
 
-set :haml, :format => :html5
-PROJECTS = %w{fastcustomer remotejobs maxrvu appmarkit crashbucket nezumi publishur wecreateideas schoolyardstewards fightklub openbrews}
+configure do
+  Compass.configuration do |config|
+    config.project_path = File.dirname(__FILE__)
+    config.sass_dir = 'views'
+  end
+
+  set :haml, { :format => :html5 }
+  set :sass, Compass.sass_engine_options
+end
+
+PROJECTS = %w{giftcardzen fastcustomer remotejobs maxrvu appmarkit crashbucket nezumi publishur wecreateideas schoolyardstewards fightklub openbrews}
 
 get '/' do
-  @home = true
+  @page = "home"
   haml :index
 end
 
-get '/portfolio' do
-  @portfolio = true
-  haml :portfolio
-end
-
 get '/contact' do
-  @contact = true
+  @page = "contact"
   haml :contact
 end
 
-# PROJECTS
-
 get '/portfolio/:project' do
   pass unless PROJECTS.include?(params[:project])
-  @portfolio = true
+  @page = "portfolio"
+  @title = params[:project]
   haml params[:project].to_sym
 end
 

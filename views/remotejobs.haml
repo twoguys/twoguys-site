@@ -1,27 +1,31 @@
-%header.quote
-  %h1
-    Remote Jobs
-  %span.subtitle
-    A job board for remote folks, of course!
-    %a.arrowed.link-out{:href => "http://remote-jobs.com"} visit site
+%nav
+  %a.prev{href: "/portfolio/fastcustomer"} &larr;
+  %a.home{href: "/"} home
+  %a.next{href: "/portfolio/maxrvu"} &rarr;
 
-%section.project-description
-  %p
-    This was a collaboration with
-    %a{:href => "http://tripledogdare.net"} Evan Light.
-  %p
-    Being remote workers ourselves, we wanted a better way to find remote work.
-    As a solution, Evan started the Hacker News post
-    %a{:href => "http://news.ycombinator.com/item?id=1857051"} Ask HN: Who Is Hiring Remote Workers?
-    and 210 up-votes and 85 comments later, we realized others had the same need.
-    Given the community need, and our passion for building new sites, we decided to launch Remote Jobs.
-  %p
-    We designed the site and helped build the Ruby on Rails backend.
+.container
   
-  %ul.screenshots
-    %li
-      %img{:src => "/projects/remotejobs/large.jpg"}
-    %li
-      %img{:src => "/projects/remotejobs/large2.jpg"}
+  %header
+    %h1 Remote Jobs
+    %span A job board for remote folks, of course!
+
+  %section
+    %p
+      Being remote workers ourselves, we wanted a better way to find remote work.
+      As a solution,
+      %a{:href => "http://tripledogdare.net"} Evan Light
+      started the Hacker News post
+      %a{:href => "http://news.ycombinator.com/item?id=1857051"} Ask HN: Who Is Hiring Remote Workers?
+    %p
+      210 up-votes and 85 comments later, we realized others had the same need.
+      Given the community need, and our passion for building new sites, we decided to launch
+      %a{href: "http://remote-jobs.com"} Remote Jobs.
+    %p 
+      David did the design, the front-end development, and part of the back-end development in collaboration with Evan.
   
-%a.arrowed-back.align.space-that-thing{:href => "/portfolio"} back to portfolio
+  %section
+    %ul
+      %li
+        %img{:src => "/projects/remotejobs/large.jpg"}
+      %li
+        %img{:src => "/projects/remotejobs/large2.jpg"}
