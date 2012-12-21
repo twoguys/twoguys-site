@@ -3,9 +3,7 @@ require 'sinatra'
 require 'haml'
 require 'sass'
 
-configure do
-  set :haml, { :format => :html5 }
-end
+set :haml, :format => :html5
 
 PROJECTS = %w{giftcardzen fastcustomer remotejobs maxrvu appmarkit crashbucket nezumi publishur wecreateideas schoolyardstewards fightklub openbrews}
 
