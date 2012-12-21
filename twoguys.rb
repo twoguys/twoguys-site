@@ -5,7 +5,6 @@ require 'sass'
 
 configure do
   set :haml, { :format => :html5 }
-  set :sass, Compass.sass_engine_options
 end
 
 PROJECTS = %w{giftcardzen fastcustomer remotejobs maxrvu appmarkit crashbucket nezumi publishur wecreateideas schoolyardstewards fightklub openbrews}
