@@ -1,9 +1,9 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    haml (3.0.25)
+    haml (3.1.7)
     rack (1.2.2)
-    sass (3.1.0.alpha.252)
+    sass (3.2.3)
     sinatra (1.2.2)
       rack (~> 1.1)
       tilt (>= 1.2.2, < 2.0)
