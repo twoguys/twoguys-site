@@ -5,7 +5,7 @@ require 'sass'
 
 set :haml, :format => :html5
 
-PROJECTS = %w{giftcardzen fastcustomer remotejobs maxrvu appmarkit crashbucket nezumi publishur wecreateideas schoolyardstewards fightklub openbrews}
+PROJECTS = %w{seesaw momeant giftcardzen fastcustomer remotejobs maxrvu appmarkit crashbucket nezumi publishur wecreateideas schoolyardstewards fightklub openbrews}
 
 get '/' do
   @page = "home"
