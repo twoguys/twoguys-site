@@ -28,10 +28,10 @@ end
 
 get '/stylesheets/reset.css' do
   content_type 'text/css', :charset => 'utf-8'
-  sass :reset
+  scss :reset
 end
 
 get '/stylesheets/styles.css' do
   content_type 'text/css', :charset => 'utf-8'
-  sass :styles
+  scss :styles
 end
