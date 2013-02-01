@@ -4,9 +4,12 @@
   / All content & design copyright 2011 Two Guys, LLC
   %head
     %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
-    %meta{ :name => "Description", "http-equiv" => "Description", :content => "We design and build things you’re proud to show off." }
+    %meta{ :name => "Description", "http-equiv" => "Description", :content => @description || "We design and build things you’re proud to show off." }
     %meta{ :name => "Keywords", "http-equiv" => "Keywords", :content => "twoguys, two guys, two, guys, design, development, studio, web, ruby, rails, ruby on rails, iphone" }
-    %title Two Guys | #{@title || "Web & Mobile"}
+    - if @full_title
+      %title= @full_title
+    - else
+      %title Two Guys | #{@title || "Web & Mobile"}
     
     %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0, maximum-scale=1" }
     
@@ -39,13 +42,3 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-      (function() {
-          var t   = document.createElement('script');
-          t.type  = 'text/javascript';
-          t.async = true;
-          t.id    = 'gauges-tracker';
-          t.setAttribute('data-site-id', '4df8be5ef5a1f5036c000001');
-          t.src = '//secure.gaug.es/track.js';
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(t, s);
-        })();

@@ -24,6 +24,13 @@ get '/portfolio/:project' do
   haml params[:project].to_sym
 end
 
+get '/books' do
+  @full_title = "Becoming a Designer + Developer on the Web"
+  @description = "This book will teach you the fundamentals of how to build on the web, while also showing you where to look for more."
+  @page = "books"
+  haml :books
+end
+
 # STYLESHEETS
 
 get '/stylesheets/reset.css' do

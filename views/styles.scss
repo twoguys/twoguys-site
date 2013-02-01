@@ -36,6 +36,32 @@ a.back {
   margin: 3em 0;
 }
 
+nav {
+  height: 1.4em;
+  padding: 0.75em 0;
+  background: #f7f7f7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  a.prev, a.next {
+    background: $link_color;
+    color: #fff;
+    padding: 2px 6px 4px;
+    line-height: 1em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  a.prev { float: left; margin-left: 1em; }
+  a.home {
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+  }
+  a.next { float: right; margin-right: 1em; }
+}
+
 body#home {
   header {
     padding: 80px 0;
@@ -64,6 +90,19 @@ body#home {
       }
     }
     .clear { clear: both; }
+    a#books {
+      display: block;
+      width: 9em;
+      margin: 3em auto 1em;
+      padding: 0.5em;
+      background: $link_color;
+      color: #fff;
+      font-size: 1.3em;
+      text-align: center;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+    }
   }
   .work {
     text-align: center;
@@ -137,31 +176,6 @@ body#home {
 
 body#portfolio {
   margin-top: 5.9em;
-  nav {
-    height: 1.4em;
-    padding: 0.75em 0;
-    background: #f7f7f7;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    a.prev, a.next {
-      background: $link_color;
-      color: #fff;
-      padding: 2px 6px 4px;
-      line-height: 1em;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      border-radius: 3px;
-    }
-    a.prev { float: left; margin-left: 1em; }
-    a.home {
-      position: absolute;
-      left: 50%;
-      margin-left: -20px;
-    }
-    a.next { float: right; margin-right: 1em; }
-  }
   header {
     width: 50%;
     margin: 0 auto 3em;
@@ -177,6 +191,38 @@ body#portfolio {
       li { margin-bottom: 3em; }
       img { width: 100%; border: 2px solid #f0f0f0; }
     }
+  }
+}
+
+body#books {
+  margin-top: 5.9em;
+  .container { max-width: 800px; }
+  img#cover { width: 100%; margin-bottom: 3em; }
+  #copy { max-width: 600px; margin: 0 auto; }
+  h1 { text-align: center; margin-bottom: 2em; }
+  p { font-size: 1.1em; }
+  h2 { margin: 2em 0; font-size: 1.5em; line-height: 1.5em; }
+  #actions { margin-bottom: 3em; text-align: center; }
+  a#subscribe {
+    display: block;
+    width: 19em;
+    margin: 3em auto 0.75em;
+    padding: 0.5em;
+    background: $link_color;
+    color: #fff;
+    font-size: 1.3em;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  #table-of-contents {
+    h1 { padding-bottom: 1em; border-bottom: 1px solid #eee; }
+    h1 span { text-transform: uppercase; letter-spacing: 0.1em; }
+    h1 em { font-size: 0.8em; }
+    h3 { font-size: 1.3em; margin-bottom: 1em; }
+    ol { margin-bottom: 1.5em; }
+    ol li { margin-bottom: 0.3em; list-style-type: decimal; }
   }
 }
     
