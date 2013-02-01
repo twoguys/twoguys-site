@@ -205,7 +205,7 @@ body#books {
   #actions { margin-bottom: 3em; text-align: center; }
   a#subscribe {
     display: block;
-    width: 19em;
+    max-width: 19em;
     margin: 3em auto 0.75em;
     padding: 0.5em;
     background: $link_color;
